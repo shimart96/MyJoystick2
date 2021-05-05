@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#29A3DC">
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="Remote Control" 
+		android:textSize="20sp"/>
+		
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_margin="20dp"
+	android:orientation="horizontal"
+	android:background="#29A3DC">
+	
+		<Button
+			android:id="@+id/on"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="ON"
+		android:onClick="didTapButton1"
+		android:layout_margin="5dp"
+		android:background="#20B557">
+	</Button>
+		<Button
+			android:id="@+id/off"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="OFF"
+			android:onClick="didTapButton2"
+			android:layout_margin="5dp"
+			android:background="#DD2149">
+
+		</Button>
+		
+</LinearLayout>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:background="#D6CAC9">
+
+		<Button
+			android:id="@+id/walk"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="didTapButton3"
+			android:text="WALK"
+			android:layout_margin="5dp"
+			android:background="#F59004">
+		</Button>
+		<Button
+			android:id="@+id/run"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="RUN"
+			android:onClick="didTapButton4"
+			android:layout_margin="5dp"
+			android:background="#DFED43">
+		</Button>
+			
+		<Button
+			android:id="@+id/eat"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="EAT"
+			android:onClick="didTapButton5"
+			android:layout_margin="5dp"
+			android:background="#3A9EDD">
+
+		</Button>
+		<Button
+			android:id="@+id/sleep"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="SLEEP"
+			android:onClick="didTapButton6"
+			android:layout_margin="5dp"
+			android:background="#7D97A7">
+
+		</Button>
+	</LinearLayout>
+	<com.s33me.myjoystick.JoyStickView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/joystick" />
+
+</LinearLayout>
+
